@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice Chat with AI</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn-container">
+        <button id="grant-access-btn">Grant Mic Access</button>
+        <button id="start-listening-btn" disabled>Start Talking</button>
+      </div>
+
+      <div id="status">Ready to start</div>
+
+      <div id="wave-visualization" class="wave-container">
+        <div class="wave animated"></div>
+        <div class="wave animated"></div>
+        <div class="wave animated"></div>
+        <div class="wave animated"></div>
+        <div class="wave animated"></div>
+      </div>
+
+      <div class="chat-container" id="chat-container">
+        <div class="message ai-message">Hi, I'm your AI ! hahah...</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
