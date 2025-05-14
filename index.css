@@ -80,6 +80,30 @@ button:disabled {
   color: var(--text-secondary);
 }
 
+.input-container {
+  display: flex;
+  padding: 10px;
+  background-color: var(--surface);
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 1px solid #444;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #1e1e1e;
+  color: var(--text);
+  outline: none;
+}
+
+.input-container input::placeholder {
+  color: #888;
+}
+
 .chat-container {
   background-color: var(--surface);
   border-radius: 8px;
