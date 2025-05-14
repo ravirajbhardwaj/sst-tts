@@ -209,12 +209,12 @@ userMessage.addEventListener("keydown", async (event) => {
       addMessage(transcript, true);
       event.target.value = "";
     }
-    await geminiResult(transcript);
-
     statusDiv.textContent = "Thinking...";
 
     // Add typing indicator while waiting for response
     addTypingIndicator();
+
+    await geminiResult(transcript);
   }
 });
 // Initialize voice synthesis
